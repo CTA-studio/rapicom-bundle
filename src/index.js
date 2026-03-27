@@ -1,18 +1,7 @@
 import barba from "@barba/core";
 import Lenis from "lenis";
 
-function createLenis(options = {}) {
-  return new Lenis(options);
-}
-
-const RapicomBundle = {
-  barba,
-  createLenis,
-};
-
 if (typeof window !== "undefined") {
-  window.RapicomBundle = RapicomBundle;
+  window.barba = barba;
+  window.Lenis = Lenis;
 }
-
-export { barba, createLenis };
-export default RapicomBundle;
