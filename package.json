@@ -1,0 +1,16 @@
+{
+  "name": "rapicom-bundle",
+  "version": "1.0.0",
+  "description": "Bundle RAPICOM con Barba e Lenis",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.3",
+    "lenis": "^1.3.10"
+  },
+  "devDependencies": {
+    "webpack": "^5.101.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
