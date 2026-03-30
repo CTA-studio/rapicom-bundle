@@ -364,7 +364,7 @@ function initBarbaWithGSAP() {
   }
 
   barba.init({
-    debug: false,
+   // debug: true,
     timeout: 5000,
     transitions: [
       {
