@@ -4,8 +4,6 @@ const handleUnblockScroll = window.handleUnblockScroll;
 const cleanUpTriggers = window.cleanUpTriggers;
 const cleanUpPageListeners = window.cleanUpPageListeners;
 const lenisInstance = window.lenisInstance;
-const cookieManager = window.cookieManager;
-const uiManager = window.uiManager;
 
 //-Variabili apertura Menu
 
@@ -358,9 +356,9 @@ function initBarbaWithGSAP() {
       window.pageTrigger?.unlockAfterBarba(data.next.container);
     }
 
-    if (!cookieManager.getCookie("cta")) {
-      uiManager.showBanner();
-    }
+ if (!window.cookieManager?.getCookie("cta")) {
+  window.uiManager?.showBanner?.();
+}
   }
 
   barba.init({
