@@ -2,3 +2,4 @@
 import "./map";
 import "./core";
 import "./functions";
+import "./cookie";
