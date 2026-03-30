@@ -2,12 +2,16 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: {
+    "rapicom-vendor": "./src/vendor/index.js",
+    "rapicom-app": "./src/app/index.js",
+  },
   output: {
-    filename: "rapicom-bundle.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
-    library: "RapicomBundle",
-    libraryTarget: "umd",
-    globalObject: "this",
+    clean: true,
+  },
+  optimization: {
+    minimize: true,
   },
 };

@@ -1,3 +1,4 @@
+// src/vendor/index.js
 import barba from "@barba/core";
 import Lenis from "lenis";
 
