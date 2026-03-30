@@ -90,21 +90,274 @@ Object.assign(pageSpecificFunctionsMap, {
 // JSON-LD map
 // --------------------------------------------------
 Object.assign(jsonPageMap, {
-  "68495c862118366c67fc2cad": {
+ "68495c862118366c67fc2cad": {
     active: true,
-    json: `...`,
+    json: `{
+      "@context": "https://schema.org",
+      "@type": "HomePage",
+      "@id": "https://rapicom.it/#webpage",
+      "url": "https://rapicom.it",
+      "name": "Servizi e pagamenti digitali per esercenti e punti vendita | Rapicom",
+      "description": "Offri ricariche, pagamenti, gift card, ticketing e welfare aziendale nel tuo punto vendita. Rapicom è il partner digitale per esercenti e aziende.",
+      "isPartOf": {
+        "@id": "https://rapicom.it/#website"
+      },
+      "about": {
+        "@id": "https://rapicom.it/#organization"
+      },
+      "inLanguage": "it-IT"
+    }`,
   },
   "69c187a7a72fc802fff1c0c0": {
     active: true,
-    json: `...`,
+    json: `{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://rapicom.it/servizi/#webpage",
+          "url": "https://rapicom.it/servizi",
+          "name": "Servizi digitali per esercenti e punti vendita | Rapicom",
+          "description": "Scopri i servizi Rapicom per esercenti, punti vendita e aziende: pagamenti, telefonia, wallet, welfare, mobilità, acquisti e soluzioni dedicate.",
+          "isPartOf": {
+            "@id": "https://rapicom.it/#website"
+          },
+          "about": {
+            "@id": "https://rapicom.it/#organization"
+          },
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rapicom.it/servizi/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rapicom.it"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Servizi",
+              "item": "https://rapicom.it/servizi"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://rapicom.it/servizi/#services",
+          "name": "Servizi digitali Rapicom",
+          "description": "Categorie di servizi digitali disponibili sulla piattaforma Net Center per esercenti, punti vendita e aziende.",
+          "url": "https://rapicom.it/servizi",
+          "numberOfItems": 8,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Service",
+                "name": "Pagamenti",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Service",
+                "name": "Telefonia",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Service",
+                "name": "Betting e giochi",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Service",
+                "name": "Wallet",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Service",
+                "name": "Cripto",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "Service",
+                "name": "Mobilità",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Service",
+                "name": "Acquisti",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "Service",
+                "name": "Welfare",
+                "provider": {
+                  "@id": "https://rapicom.it/#organization"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Italy"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }`,
   },
   "69afe57b7935bbe862287e12": {
     active: true,
-    json: `...`,
+    json: `{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://rapicom.it/chi-siamo/#webpage",
+          "url": "https://rapicom.it/chi-siamo",
+          "name": "Chi siamo | Da oltre 20 anni al fianco del tuo business | Rapicom",
+          "description": "Dal 2004 Rapicom sviluppa servizi e soluzioni digitali per esercenti, punti vendita e aziende. Scopri la nostra storia e la visione che guida il nostro lavoro.",
+          "isPartOf": {
+            "@id": "https://rapicom.it/#website"
+          },
+          "about": {
+            "@id": "https://rapicom.it/#organization"
+          },
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rapicom.it/chi-siamo/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rapicom.it"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Chi siamo",
+              "item": "https://rapicom.it/chi-siamo"
+            }
+          ]
+        }
+      ]
+    }
+    `,
   },
   "69b011a2a1832ebdf65472ec": {
     active: true,
-    json: `...`,
+    json: `{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://rapicom.it/contatti/#webpage",
+          "url": "https://rapicom.it/contatti",
+          "name": "Contatti | Rapicom",
+          "description": "Contatta Rapicom per informazioni sui servizi digitali per esercenti, punti vendita e aziende.",
+          "isPartOf": {
+            "@id": "https://rapicom.it/#website"
+          },
+          "about": {
+            "@id": "https://rapicom.it/#organization"
+          },
+          "inLanguage": "it-IT"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://rapicom.it/contatti/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://rapicom.it"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contatti",
+              "item": "https://rapicom.it/contatti"
+            }
+          ]
+        }
+      ]
+    }`,
   },
 });
 
